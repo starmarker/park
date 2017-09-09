@@ -1,0 +1,906 @@
+html,
+body {
+    height: 100%;
+    min-width: 900px;
+}
+
+   .layout{
+        border: 1px solid #d7dde4;
+        background: #f5f7f9;
+        position: relative;
+    }
+    .layout-breadcrumb{
+        padding: 10px 15px 0;
+    }
+    .layout-content{
+        min-height: 200px;
+        margin: 15px;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 4px;
+    }
+    .layout-content-main{
+        padding: 10px;
+    }
+    .layout-copy{
+        text-align: center;
+        padding: 10px 0 20px;
+        color: #9ea7b4;
+    }
+    .layout-menu-left{
+        background: #464c5b;
+    }
+    .layout-header{
+        height: 60px;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    }
+    .layout-logo-left{
+        width: 90%;
+        height: 30px;
+        background: #5b6270;
+        border-radius: 3px;
+        margin: 15px auto;
+    }
+.block {
+    width: 420px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 30px 40px;
+    background-color: rgba(255, 255, 255, .22);
+    border-radius: 10px;
+    z-index: 1;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    margin-left: -210px;
+}
+
+.block .text-logo {
+    display: block;
+    margin: 0px auto 10px;
+}
+
+.block .ivu-input {
+    border: 1px solid #64b7f4;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 15px;
+    padding-left: 10px;
+    color: #64b7f4;
+}
+
+.block .ivu-input::-webkit-input-placeholder {
+    color: #3983c8;
+}
+
+.block .ivu-input:-moz-placeholder {
+    color: #3983c8;
+}
+
+.block .ivu-input::-moz-placeholder {
+    color: #3983c8;
+}
+
+.block .ivu-input:-ms-input-placeholder {
+    color: #3983c8;
+}
+
+.block .ivu-input:focus,
+.block .ivu-input:hover {
+    outline: none;
+    border: 1px solid #64b7f4;
+}
+
+.authcode {
+    width: 250px !important;
+}
+
+.auth-logo {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    top: 1px;
+}
+
+
+/*.authcode .ivu-input{border-top-right-radius: 0px;border-bottom-right-radius:0px; }*/
+
+.login-button,
+.reset-button {
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgba(78, 150, 204, .9);
+    border: none;
+    line-height: 2;
+    color: #fff;
+}
+
+.reset-button {
+    background-color: rgba(78, 150, 204, .3);
+    margin-top: 20px;
+}
+
+
+/*.block .ivu-form-item-error-tip{color:#64b7f4;}*/
+
+.block .block-tips {
+    line-height: 3.5;
+    color: #64b7f4;
+    font-size: 14px;
+}
+
+.block-tips a {
+    color: #1569c1;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.block-tips a:hover {
+    top: 0;
+    left: 0;
+    color: #1569c1;
+    text-decoration: underline;
+}
+
+.register-progress li {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ddd;
+    z-index: 2;
+    position: relative;
+    float: left;
+}
+
+.register-progress li p {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #efefef;
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    font-family: "微软雅黑"
+}
+
+.register-progress li i {
+    position: absolute;
+    bottom: -25px;
+    left: 40px;
+    font-size: 30px;
+    color: #efefef;
+}
+
+.text-tips {
+    line-height: 3;
+    font-size: 14px;
+    color: #fff;
+}
+
+.layout-content {
+    overflow-y: auto !important;
+}
+
+.layout-logo-left {
+    background-color: transparent;
+    height:50px;
+}
+.layout-logo-left img {
+    max-width: 90%;
+    max-height:30px;
+}
+.layout-logo-left p{
+    padding-left:5%;
+    font-size:14px;
+    line-height: 2;
+    color:#fff;
+    width:90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item-block-title {
+    font-size: 16px;
+    width: 100%;
+    border-left: 3px solid #1569c1;
+    padding-left: 10px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    float: left;
+    border-bottom: 1px solid #eee;
+}
+
+.left-tree {
+    margin-left: 5px;
+    width: 96%;
+    float: left;
+}
+
+.item-block-title .operate {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    height: 40px;
+    letter-spacing: .2em;
+}
+
+.item-block-title .operate.active {
+    color: #0079F7;
+}
+
+.item-block-title .operate i {
+    cursor: pointer;
+}
+
+.item-block-title .operate button {
+    color: #0079F7;
+    font-size: 16px;
+}
+
+.common-table {
+    clear: both;
+    top: 10px;
+}
+
+.table-header-operate {
+    line-height: 40px;
+    float: left;
+    width: 100%;
+    padding: 0 5px;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.number {
+    color: #0079F7;
+}
+
+.overflow {
+    overflow-y: auto;
+}
+
+.table-page-position {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.ivu-select-multiple .ivu-select-input,
+.ivu-select-input {
+    width: auto !important;
+}
+
+.item-block .cols {
+    width: 20%;
+    float: left;
+    border: 1px solid #dedede;
+    height: 300px;
+    margin-left: 2%;
+    margin-top: 2%;
+    overflow-y: auto;
+    min-width: 200px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.item-block .cols .submitper {
+    width: 90%;
+    margin-top: 40px;
+    margin-right: 5%;
+    float: right;
+}
+
+
+/*.item-block .cols .submitper span{z-index:101;}*/
+
+.bus-objs {
+    width: 120px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.bus-objs li {
+    width: 99%;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #dedede;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+.bus-objs li:hover,
+.bus-objs li.active {
+    background-color: #0079F7;
+    color: #fff;
+}
+
+.item-block .cols .diy-nav-content {
+    display: table;
+    float: left;
+    margin-left: 10px;
+    border: 1px solid #eee;
+    min-width: 300px;
+}
+
+.item-block .ivu-tabs {
+    width: 100%;
+    float: left;
+}
+
+.argument-class {
+    width: 20%;
+    float: left;
+    margin: -40px 0 10px 10px;
+}
+
+.argument-table {
+    width: 75%;
+    float: right;
+    margin: -40px 0 10px 10px;
+}
+
+.argument-class .argument-class-title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(78, 150, 204, .4);
+    color: #0079F7;
+    text-align: center;
+    font-size: 16px;
+}
+
+.argument-class ul {
+    border: 1px solid #eee;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.argument-class ul li {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.argument-class ul:last-child {
+    border-bottom: none;
+}
+
+
+/*前台客户端样式*/
+
+.main-title {
+    font-size: 18px;
+}
+
+.main-title-color {
+    color: #0079F7;
+}
+
+.main-title-text {
+    letter-spacing: .2em;
+    font-weight: 600;
+    color: #666;
+}
+
+.clients-title {
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+
+.title-button {
+    background-color: transparent !important;
+    border-color: #0079F7 !important;
+    color: #0079F7 !important;
+}
+
+.current-clicked {
+    background-color: #0079F7 !important;
+    color: #fff !important;
+    border-color: #0079F7 !important;
+}
+
+.operate .ivu-input-group-append {
+    background-color: transparent;
+    border-color: #0079F7;
+    border-left: 1px solid #ddded1;
+    font-size: 18px;
+}
+
+.operate .ivu-input {
+    border-color: #0079F7 !important;
+    border-right: none;
+}
+
+.operate .ivu-input::-webkit-input-placeholder {
+    color: #0079F7 !important;
+}
+
+.operate .ivu-input:-moz-placeholder {
+    color: #0079F7 !important;
+}
+
+.operate .ivu-input::-moz-placeholder {
+    color: #0079F7 !important;
+}
+
+.operate .ivu-input:-ms-input-placeholder {
+    color: #0079F7 !important;
+}
+
+.ivu-table-wrapper {
+    float: left;
+    width: 100%;
+}
+
+
+.api .ivu-checkbox-wrapper {
+    width: 100%;
+    float: left;
+    line-height: 2;
+}
+
+.ivu-table-tbody {
+    width: 100%;
+}
+
+.diy-box .ivu-modal-body {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+
+/*详情页弹出窗样式*/
+
+.detail-box .ivu-modal-mask {
+    display: none !important;
+}
+
+.detail-box .ivu-modal-header {
+    padding: 10px 5px;
+    line-height: 2;
+    border-bottom: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+
+.detail-box .ivu-modal-header .ivu-steps {
+    width: 96%;
+    margin: auto;
+}
+
+.detail-box .detail-title {
+    padding-left: 10px;
+    float: left;
+    font-weight: 600;
+    line-height: 3;
+    width: 96%;
+    font-size: 14px;
+}
+
+.detail-box .detail-title>span {
+    color: #3983c8;
+    font-size: 16px;
+}
+
+.detail-box .detail-item-title,
+.detail-box .detail-item-content {
+    width: 100%;
+    padding-left: 24px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.detail-box .detail-item-content {
+    color: #999;
+}
+
+.detail-box .ivu-modal-footer {
+    display: none;
+}
+
+.detail-box .link-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    color: #fff;
+    background-color: #f84801;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 3px;
+    float: left;
+    margin-left: -20px;
+}
+.detail-box .ivu-modal-body{
+    max-height:335px;
+    overflow-y: auto;
+}
+.detail-box .ivu-collapse>.ivu-collapse-item>.ivu-collapse-header>i {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.detail-box .ivu-collapse>.ivu-collapse-item>.ivu-collapse-header {
+    height: 46px;
+    margin-top: 5px;
+}
+
+.detail-box .ivu-collapse>.ivu-collapse-item>.ivu-collapse-header h3 {
+    display: table;
+    float: left;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.detail-box .ivu-collapse>.ivu-collapse-item>.ivu-collapse-header h3 small {
+    font-size: .9em;
+    font-weight: normal;
+    color: #666;
+    vertical-align: baseline;
+    margin-left: 5px;
+}
+.detail-box .ivu-collapse>.ivu-collapse-item .ivu-table-wrapper{
+    height:245px !important;
+    overflow-x: hidden;
+}
+.detail-box .ivu-collapse>.ivu-collapse-item>.ivu-collapse-header button {
+    float: right;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.detail-box .ivu-collapse>.ivu-collapse-item>.ivu-collapse-header .ivu-upload-select {
+    float: right;
+    font-size: 18px;
+    width: 42px;
+}
+
+.detail-box .ivu-collapse {
+    border: none;
+    background-color: transparent;
+}
+
+.detail-box .content-item {
+    box-sizing: border-box;
+    padding: 3px;
+    font-size: 14px;
+    border: 1px dashed transparent;
+    margin-top: 10px;
+}
+
+.detail-box .content-item:hover {
+    border: 1px dashed #ccc;
+}
+
+.detail-box .ivu-collapse-content>.ivu-collapse-content-box {
+    padding-top: 0px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+}
+
+
+/*.detail-box .content-item p{line-height: 2;}*/
+
+.detail-box .ivu-modal-close {
+    z-index: 10;
+}
+
+.detail-box .content-item span {
+    color: #3983c8;
+    font-size: 13px;
+}
+
+.detail-box .comm {
+    max-height: 300px;
+    overflow: auto;
+    position: relative;
+}
+
+.detail-box .comm li {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.detail-box .comm li>img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 50%;
+}
+
+.detail-box .comm-detail {
+    overflow: hidden;
+}
+
+.comm-header,
+.comm-content {
+    font-size: 14px;
+    color: #000;
+    float: left;
+    width: 99%;
+}
+
+.comm-header p,
+.comm-content p {
+    padding: 0 25px;
+}
+.comm-content img{
+    max-width:90%;
+    max-height:50px;
+}
+.comm-content p {
+    line-height: 2;
+    font-size: 14px;
+}
+
+.comm-time {
+    color: #666;
+}
+
+.comm-creater,
+.comm-content-title {
+    color: #3983c8;
+}
+
+.comm-content-title {
+    font-size: 18px;
+    line-height: 2
+}
+
+.comm-button {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.comm-form form {
+    height: 200px;
+    overflow: auto;
+    padding-right: 5px;
+}
+
+.info-details,
+.wgmember {
+    font-size: 14px;
+    padding: 15px;
+}
+
+.info-details p,
+.wgmember li {
+    line-height: 2;
+}
+
+.wgmember li {
+    width: 100%;
+    float: left;
+}
+
+.wgmember li .ivu-btn-group {
+    float: right;
+    margin-right: 10px;
+}
+
+.wgmember li .ivu-btn-group button span {
+    font-size: 16px;
+    color: #3983c8;
+}
+
+.ismanger {
+    color: red;
+}
+
+
+/*::-webkit-scrollbar{background-color:#ccc;width:3px; }*/
+
+.scrollbar::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    background-color: #f5f5f5;
+}
+
+
+/*定义滚动条的轨道，内阴影及圆角*/
+
+.scrollbar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+
+/*定义滑块，内阴影及圆角*/
+
+.scrollbar::-webkit-scrollbar-thumb {
+    /*width: 10px;*/
+    height: 3px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+.detail-box.ivu-upload-list-file>span {
+    display: inline-block;
+    width: 50%;
+}
+
+.topindex {
+    z-index: 999999 !important;
+}
+
+
+/*以上为详情部分样式*/
+
+.clients-welcome .wel-block {
+    width: 99%;
+    float: left;
+    box-shadow: 2px 2px 2px 1px #b1d2f1;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.clients-welcome .item-block-title {
+    color: #3983c8;
+}
+
+.workgroup-info,
+.workgroup-info li {
+    width: 99%;
+    float: left;
+}
+
+.workgroup-info .info-intro {
+    overflow: hidden;
+}
+
+.workgroup-info li {
+    padding-right: 20px;
+}
+
+.workgroup-info li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.workgroup-info li h4 {
+    width: 100%;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.clients-welcome .item-block-title+p {
+    font-size: 14px;
+}
+
+.works ul {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    overflow-y: auto;
+    max-height: 340px;
+}
+
+
+/*.works ul li{font-size:16px;padding:10px;}
+.works ul li .work-time i{color:#3983c8;}
+.works ul li .work-title{display: inline-block;}*/
+
+.works ul li .time {
+    font-size: 16px;
+    color: #3983c8;
+}
+
+.works ul li .content {
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+.com-info .list-icon {
+    display: inline-block;
+    background-color: #f8822b;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.com-info li {
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.com-info li p {
+    float: left;
+    display: inline;
+}
+
+.diy-panes .item-block-title i {
+    font-size: 16px;
+}
+
+.diy-panes .ivu-carousel {
+    float: left;
+    width: 100%;
+    height: 300px;
+}
+
+.personal .ivu-form .ivu-form-item-label {
+    font-size: 14px !important;
+}
+.personal .ivu-form img{
+    width:80px;
+    height:80px;
+}
+.addplan .ivu-modal-body {
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.addplan .ivu-modal-body h3 {
+    margin-left: -16px;
+    margin-top: -10px;
+}
+
+.addplan .ivu-modal-body .item-block-title {
+    border-bottom: none;
+}
+
+.plan-content {
+    width: 100%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.dataarea .ivu-select-dropdown,
+.small-modal .ivu-select-dropdown {
+    position: absolute !important;
+}
+
+
+/*.addplan .table,.addplan .table tr,.addplan .table th{border:1px solid #ccc;border-collapse: collapse;text-align: center;}
+.addplan .table .ivu-input{height:24px;width:90%;}
+.addplan .table tr{height:40px;}
+.addplan .table .td-month{border-left:1px solid #ccc;}
+.addplan .table .td-name{width:10%;min-width:80px;table-layout: fixed;text-align:center;}
+.addplan .table .td-content{width:40%;table-layout: fixed;}*/
+
+
+/*自定义step样式*/
